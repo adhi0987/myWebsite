@@ -1,0 +1,4 @@
+steps 
+1.  npx create-vite@latest
+2.  npm install
+3.  npm run dev
