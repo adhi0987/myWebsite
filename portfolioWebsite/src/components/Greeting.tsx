@@ -1,4 +1,3 @@
-// src/components/Greeting.tsx
 
 type GreetingProps = {
   name: string;
