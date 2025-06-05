@@ -6,7 +6,6 @@
   --primary-color: #646cff;
   --hover-color: #21B607;
 
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -26,6 +25,7 @@
 body {
   display: flex;
   flex-direction: column;
+  font-family: 'Poppins',sans-serif;
   min-height: 100vh;
   min-width: 320px;
   transition: background-color 0.3s ease, color 0.3s ease;

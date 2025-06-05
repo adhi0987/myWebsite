@@ -1,0 +1,124 @@
+/* Footer Component Styles */
+
+.footer-top {
+  color: #000000; /* White text */
+  padding: 1%;
+  display: flex;
+
+}
+
+.name-section {
+  margin-bottom: 1.5rem;
+  padding: 10px;
+  flex: 1;
+}
+
+.full-name {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.matter {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #686c71; /* Light gray text */
+}
+
+.links-section {
+  margin-bottom: 1.5rem;
+  padding: 10px;
+  flex: 1;
+}
+
+.links-section p {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.links-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links-section li {
+  margin: 0.5rem 0;
+}
+
+.links-section a {
+  color: #000000; /* Light blue for links */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.links-section a:hover {
+  color: #000000; /* Lighter blue on hover */
+}
+
+.contact-section {
+  margin-bottom: 1.5rem;
+  padding: 10px;
+  flex: 1;
+}
+
+.contact-heading h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-icon-section ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem; /* Space between icons */
+}
+
+.contact-icon-section li {
+  display: inline-block;
+}
+
+.contact-icon-section a {
+  color: #000000; /* White icons */
+  font-size: 1.5rem; /* Icon size */
+  transition: color 0.3s;
+}
+
+.contact-icon-section a:hover {
+  color: #000000; /* Light blue on hover */
+}
+
+.contact-mail-section {
+  font-size: 1rem;
+  color: #6f757c; /* Light gray text */
+  margin-top: 0.5rem;
+}
+
+.footer-down {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #1a202c; /* Darker background for footer bottom */
+  color: #ffffff; /* White text */
+  font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .footer-top {
+    padding: 2rem 2%;
+  }
+
+  .full-name {
+    font-size: 1.5rem;
+  }
+
+  .matter {
+    font-size: 0.9rem;
+  }
+
+  .contact-heading h2 {
+    font-size: 1.2rem;
+  }
+
+  .contact-icon-section a {
+    font-size: 1.2rem; /* Smaller icons on mobile */
+  }
+}

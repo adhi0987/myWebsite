@@ -1,0 +1,30 @@
+/* ProjectSection.css */
+
+.project-section {
+    padding: 5%;
+    background-color: #f9f9f9; /* Light background color */
+    font-family: 'Poppins',sans-serif;
+}
+
+.page-header {
+    margin-bottom: 20px;
+}
+
+.page-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333; /* Dark text color */
+}
+
+.sub-title {
+    font-size: 1.2rem;
+    color: #666; /* Medium gray color */
+}
+
+.page-content {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap to the next line */
+    gap: 20px; /* Space between cards */
+}
+
+

@@ -1,0 +1,73 @@
+.card-container {
+  background: #ffffff; /* White background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px; /* Padding inside the card */
+  margin: 10px; /* Margin around the card */
+  max-width: 400px; /* Set maximum width */
+}
+
+.card-title-box {
+  display: flex; /* Flexbox layout for title and icon */
+  align-items: center; /* Center items vertically */
+}
+
+.card-icon-box {
+  width: 40px; /* Set width for icon box */
+  height: 40px; /* Set height for icon box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Light grey background for icon */
+  border-radius: 15%; /* Circular icon box */
+  margin-right: 15px; /* Space between icon and title */
+}
+
+.card-heading-box {
+  flex-grow: 1; /* Allow title to take remaining space */
+}
+
+.card-title {
+  font-size: 18px; /* Font size for title */
+  font-weight: bold; /* Bold title */
+  color: #333; /* Dark grey color for text */
+}
+
+.card-content-box {
+  margin-top: 10px; /* Space above content */
+  font-size: 14px; /* Font size for content */
+  color: #666; /* Medium grey color for content */
+}
+
+.card-tag-box {
+  margin-top: 15px; /* Space above tags */
+  display: flex; /* Flexbox layout for tags */
+  flex-wrap: wrap; /* Allow tags to wrap */
+}
+
+.card-tag {
+  background-color: #e0e0e0; /* Grey background for tags */
+  border-radius: 5px; /* Rounded corners for tags */
+  padding: 5px 10px; /* Padding inside tags */
+  margin: 5px; /* Margin between tags */
+  font-size: 12px; /* Font size for tags */
+  color: #444; /* Darker grey color for tag text */
+}
+
+.card-link-box {
+  margin-top: 15px; /* Space above link button */
+}
+
+.card-link-box button {
+  padding: 10px 15px; /* Padding inside button */
+  background-color: #007bff; /* Blue background for button */
+  color: white; /* White text on button */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners for button */
+  cursor: pointer; /* Cursor pointer on hover */
+  font-size: 14px; /* Font size for button text */
+}
+
+.card-link-box button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
