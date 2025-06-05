@@ -1,15 +1,28 @@
-import '../styles/App.css'
-import Greeting from './components/Greeting'
+
+import { useEffect, useState } from 'react';
+import '../styles/App.css';
+import Navbar from './components/Navbar';
+import MainPage from './components/MainPage';
 
 function App() {
-  // const [count, setCount] = useState(0)
-
+  const [toggleTheme , setToggleTheme] = useState(false);
+  useEffect(()=>{
+    if(toggleTheme)
+    {
+      document.body.setAttribute('data-theme',"dark");
+    }else
+    {
+      document.body.setAttribute('data-theme',"light");
+    }
+  });
+  const changeTheme = ()=>{
+    setToggleTheme(!toggleTheme);
+  }
   return (
     <>
-      <div className='navbar'></div>
-      <div className='body'></div>
-      <div className='footer'></div>
-      <Greeting name='adhithya'/>
+      <div className='navbar'><Navbar toggleValue ={toggleTheme} themeFunction={changeTheme}/></div>
+      <div><MainPage toggler={toggleTheme}/></div>
+      {/* <Greeting name='adhithya'/> */}
     </>
   )
 }
