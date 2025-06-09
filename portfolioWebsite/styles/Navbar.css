@@ -4,6 +4,7 @@
 .navbar-container {
   display: flex;
   justify-content: space-between;
+  position: relative;
   align-items: center;
   padding: 1rem 2rem;
   position: sticky;
@@ -99,7 +100,7 @@ body[data-theme="light"] .navbar-container {
     flex-direction: column;
     align-items: flex-start;
     padding: 1rem 2rem;
-    background-color: var(--nav-bg-dark);
+    background-color: wheat;
     transform: translateY(-200%);
     opacity: 0;
     pointer-events: none;
@@ -107,7 +108,7 @@ body[data-theme="light"] .navbar-container {
   }
 
   body[data-theme="light"] .nav-right {
-    background-color: var(--nav-bg-light);
+    background-color: gray;
   }
 
   .nav-right.open {
