@@ -2,3 +2,6 @@ steps
 1.  npx create-vite@latest
 2.  npm install
 3.  npm run dev
+
+using () for JSX immediately after => is a shorthand for return.
+tsx component file names must start with capital letter
