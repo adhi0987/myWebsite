@@ -1,3 +1,26 @@
+body[data-theme="dark"] .card-container
+{
+  border: 2px solid white;
+}
+body[data-theme="dark"] .card-icon-box
+{
+  border: 2px solid white;
+}
+body[data-theme="dark"] .card-link-box button
+{
+  border: 2px solid white;
+  border-radius: 15px;
+}
+body[data-theme="dark"] .card-tag
+{
+  opacity: 0.9;
+  border: 2px solid white;
+  border-radius: 5px; /* Rounded corners for tags */
+  padding: 5px 10px; /* Padding inside tags */
+  margin: 5px; /* Margin between tags */
+  font-size: 12px; /* Font size for tags */
+  color: white; /* Darker grey color for tag text */
+}
 .card-container {
   background: #ffffff; /* White background */
   border-radius: 8px; /* Rounded corners */

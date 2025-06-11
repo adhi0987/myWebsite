@@ -7,6 +7,48 @@ body {
   padding: 0;
   background-color: #f4f4f4;
 }
+
+body[data-theme ="dark"] .Page-header .title
+{
+  color: white;
+}
+
+body[data-theme ="dark"] .Page-header .sub-heading
+{
+  color: rgb(6, 255, 6);
+}
+
+body[data-theme ="dark"] .card 
+{
+  background-color: rgb(34, 34, 34);
+  /* border: 2px solid white; */
+
+}
+
+body[data-theme ="dark"] .card .card-title
+{
+  background-color: rgb(34, 34, 34);
+  /* border: 2px solid white; */
+
+}
+body[data-theme ="dark"] .card .card-content
+{
+  background-color: rgb(34, 34, 34);
+  /* border: 2px solid white; */
+
+}
+
+body[data-theme ="dark"] .card .card-title .card-heading h2
+{
+  background-color: rgb(34, 34, 34);
+  /* border: 2px solid white; */
+
+}
+body[data-theme ="dark"] .card .card-title .card-heading
+{
+  color: #f0f0f0;
+  background-color: rgb(34, 34, 34);
+}
 .academic-section
 {
   min-height: 100vh;
@@ -56,8 +98,8 @@ body {
 }
 
 .card-icon {
-  width: 60px; /* Set width for icon box */
-  height: 60px; /* Set height for icon box */
+  width: 80px; /* Set width for icon box */
+  height: 80px; /* Set height for icon box */
   font-size: 1.5em;
   display: flex;
   justify-content: center;
@@ -73,6 +115,7 @@ body {
 }
 
 .card-tag {
+  width: 80px;
   background-color: #e7f1ff;
   color: #007bff;
   border-radius: 5px;

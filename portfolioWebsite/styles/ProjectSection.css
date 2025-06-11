@@ -1,4 +1,15 @@
 /* ProjectSection.css */
+body[data-theme ="dark"] .project-section{
+    background-color: black;
+}
+
+body[data-theme ="dark"] .project-section .page-header .page-title{
+   color: #f9f9f9;
+}
+
+body[data-theme ="dark"] .project-section .page-header .sub-title{
+   color: rgb(6, 255, 6);
+}
 
 .project-section {
     padding: 5%;

@@ -3,16 +3,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem 2rem;
+  padding: 5%;
   gap: 2rem;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Theme: Dark */
-body[data-theme="dark"] .main-page {
-  background-color: var(--bg-dark);
-  color: var(--text-dark);
-}
 
 /* Theme: Light */
 body[data-theme="light"] .main-page {
@@ -103,7 +98,7 @@ body[data-theme="light"] .resume-btn button:hover {
 @media screen and (max-width: 768px) {
   .main-page {
     flex-direction: column;
-    padding: 2rem 1rem;
+    padding: 5rem 1rem;
   }
 
   .text-container,

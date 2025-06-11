@@ -4,21 +4,24 @@
 .navbar-container {
   display: flex;
   justify-content: space-between;
-  position: relative;
   align-items: center;
-  padding: 1rem 2rem;
-  position: sticky;
+  position: fixed; 
   top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 2rem;
   z-index: 1000;
-  background-color: var(--nav-bg-dark);
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Blur effect */
   color: var(--nav-text-dark);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /* Optional: rounded corners */
+  opacity: 1;
 }
 
-/* Light Theme */
+/* Light Theme (optional support if you still have variables) */
 body[data-theme="light"] .navbar-container {
-  background-color: var(--nav-bg-light);
+  background: rgba(255, 255, 255, 0.8); /* Lighter semi-transparent background */
   color: var(--nav-text-light);
 }
 
@@ -32,13 +35,12 @@ body[data-theme="light"] .navbar-container {
 }
 
 /* =============================
-   Right Section (Nav + Toggle)
+   Right Section (Nav Links)
 ============================= */
 .nav-right {
   display: flex;
   align-items: center;
   gap: 2rem;
-  transition: all 0.3s ease;
 }
 
 /* Navigation Links */
@@ -57,25 +59,12 @@ body[data-theme="light"] .navbar-container {
   transition: color 0.3s ease;
 }
 
-.nav-right .list ul li:hover {
+.nav-right li a{
+  text-decoration: none;
   color: var(--nav-text-light);
 }
-
-/* =============================
-   Theme Toggle Button
-============================= */
-.theme-btn button {
-  background-color: transparent;
-  border: 2px solid currentColor;
-  border-radius: 50%;
-  padding: 0.5rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.theme-btn button:hover {
-  background-color: var(--nav-bg-light);
-  transform: scale(1.1);
+.nav-right .list ul li:hover {
+  color: var(--nav-text-light);
 }
 
 /* =============================
@@ -92,23 +81,27 @@ body[data-theme="light"] .navbar-container {
    Responsive Design
 ============================= */
 @media screen and (max-width: 768px) {
+  .navbar-container{
+    width: 80%;
+  }
   .nav-right {
     position: absolute;
     top: 64px;
     right: 0;
-    width: 100%;
     flex-direction: column;
     align-items: flex-start;
-    padding: 1rem 2rem;
-    background-color: wheat;
+    padding: 1rem 0rem;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect */
     transform: translateY(-200%);
-    opacity: 0;
+    opacity: 1;
     pointer-events: none;
     transition: all 0.3s ease-in-out;
+    border-radius: 10px; /* Optional: rounded corners */
   }
 
   body[data-theme="light"] .nav-right {
-    background-color: gray;
+    background: rgba(255, 255, 255, 0.8); /* Lighter semi-transparent background */
   }
 
   .nav-right.open {
@@ -126,3 +119,7 @@ body[data-theme="light"] .navbar-container {
     display: block;
   }
 }
+
+/* =============================
+   Section Padding (to avoid being hidden)
+============================= */
