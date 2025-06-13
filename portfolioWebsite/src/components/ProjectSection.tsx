@@ -9,7 +9,7 @@ const cardData = [
     tags: ["Web Development", "Database", "UI/UX"],
     content:
       "Developed a web interface for GPMS database to streamline village administration processes and improve data accessibility.",
-    link:"/",
+    link:"https://github.com/adhi0987/GPMS",
   },
   {
     icon: <FontAwesomeIcon icon={faEnvelope} />,
@@ -17,7 +17,7 @@ const cardData = [
     tags: ["Web Development", "Database", "UI/UX"],
     content:
       "Developed a web interface for GPMS database to streamline village administration processes and improve data accessibility.",
-      link:"/",
+      link:"https://github.com/adhi0987/Computer_Networks/tree/main/SimpleMailTransferProtocol(SMTP)",
   },
   {
     icon: <FontAwesomeIcon icon={faMicrochip} />,
@@ -25,7 +25,7 @@ const cardData = [
     tags: ["Web Development", "Database", "UI/UX"],
     content:
       "Developed a web interface for GPMS database to streamline village administration processes and improve data accessibility.",
-    link:"/",
+    link:"https://github.com/adhi0987/RISC_PROCESSOR",
   },
   {
     icon: <FontAwesomeIcon icon={faServer} />,
@@ -33,7 +33,7 @@ const cardData = [
     tags: ["Web Development", "Database", "UI/UX"],
     content:
       "Developed a web interface for GPMS database to streamline village administration processes and improve data accessibility.",
-    link:"/",
+    link:"https://github.com/adhi0987/Computer_Networks/tree/main/TaskAssigningServerClientModel",
   },
   {
     icon: <FontAwesomeIcon icon={faMobile} />,
