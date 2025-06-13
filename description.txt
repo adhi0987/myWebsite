@@ -5,3 +5,23 @@ steps
 
 using () for JSX immediately after => is a shorthand for return.
 tsx component file names must start with capital letter
+
+deploying in git hub using github pages 
+
+1. install gh-pages npm install -g gh-pages
+then add some scripts in the package.json 
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+change vite.config.ts as
+this
+export default defineConfig({
+  plugins: [react()],
+  base:"/myWebsite"
+})
+
+finally in the package.json 
+"homepage": "https://adhi0987.github.io/myWebsite/",
+ then 
+ run following commands
+ npm run build
+ npm run deploy

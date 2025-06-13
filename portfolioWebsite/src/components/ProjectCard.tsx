@@ -6,6 +6,7 @@ interface Props {
   title: string;
   tags: string[];
   content: string;
+  link :string;
 }
 function ProjectCard(props: Props) {
   return (
@@ -26,7 +27,7 @@ function ProjectCard(props: Props) {
           ))}
         </div>
         <div className="card-link-box">
-            <button>view Details <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></button>
+            <button><a href={props.link} target="blank">View Details</a>  <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></button>
         </div>
       </div>
     </>

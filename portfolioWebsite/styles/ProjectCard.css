@@ -1,20 +1,36 @@
 body[data-theme="dark"] .card-container
 {
-  border: 2px solid white;
+  background-color: rgb(34, 34, 34);
+  /* border: 2px solid white; */
 }
-body[data-theme="dark"] .card-icon-box
+body[data-theme="dark"] .card-link-box button 
 {
-  border: 2px solid white;
-}
-body[data-theme="dark"] .card-link-box button
-{
-  border: 2px solid white;
+  /* border: 2px solid white; */
   border-radius: 15px;
+}
+
+body[data-theme="dark"] .card-link-box a
+{
+  /* border: 2px solid white; */
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+body[data-theme="dark"] .card-title
+{
+  color: white;
+  font-size: larger;
+  font-weight: 900;
 }
 body[data-theme="dark"] .card-tag
 {
   opacity: 0.9;
-  border: 2px solid white;
+  /* border: 2px solid white; */
+  text-align: center;
+  font-weight: 700;
+  width: 100px;
+  justify-content: center;
+  background-color: black;
   border-radius: 5px; /* Rounded corners for tags */
   padding: 5px 10px; /* Padding inside tags */
   margin: 5px; /* Margin between tags */
@@ -73,8 +89,12 @@ body[data-theme="dark"] .card-tag
   border-radius: 5px; /* Rounded corners for tags */
   padding: 5px 10px; /* Padding inside tags */
   margin: 5px; /* Margin between tags */
-  font-size: 12px; /* Font size for tags */
-  color: #444; /* Darker grey color for tag text */
+  font-size: 13px; /* Font size for tags */
+  width: 100px;
+  font-weight: 900;
+  text-align: center;
+  justify-content: center;
+  color: #000000; /* Darker grey color for tag text */
 }
 
 .card-link-box {
@@ -83,7 +103,7 @@ body[data-theme="dark"] .card-tag
 
 .card-link-box button {
   padding: 10px 15px; /* Padding inside button */
-  background-color: #007bff; /* Blue background for button */
+  background-color: #007bff; 
   color: white; /* White text on button */
   border: none; /* No border */
   border-radius: 5px; /* Rounded corners for button */
@@ -91,6 +111,8 @@ body[data-theme="dark"] .card-tag
   font-size: 14px; /* Font size for button text */
 }
 
-.card-link-box button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+
+.card-link-box button a{
+  text-decoration: none;
+  color: black;
 }

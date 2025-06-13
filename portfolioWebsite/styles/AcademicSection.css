@@ -107,6 +107,7 @@ body[data-theme ="dark"] .card .card-title .card-heading
   background-color: #f0f0f0; /* Light grey background for icon */
   border-radius: 15%; /* Circular icon box */
   margin-right: 15px; /* Space between icon and title */
+  color: black;
 }
 
 .card-heading h2 {

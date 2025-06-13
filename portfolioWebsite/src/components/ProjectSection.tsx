@@ -9,6 +9,7 @@ const cardData = [
     tags: ["Web Development", "Database", "UI/UX"],
     content:
       "Developed a web interface for GPMS database to streamline village administration processes and improve data accessibility.",
+    link:"/",
   },
   {
     icon: <FontAwesomeIcon icon={faEnvelope} />,
@@ -16,6 +17,7 @@ const cardData = [
     tags: ["Web Development", "Database", "UI/UX"],
     content:
       "Developed a web interface for GPMS database to streamline village administration processes and improve data accessibility.",
+      link:"/",
   },
   {
     icon: <FontAwesomeIcon icon={faMicrochip} />,
@@ -23,6 +25,7 @@ const cardData = [
     tags: ["Web Development", "Database", "UI/UX"],
     content:
       "Developed a web interface for GPMS database to streamline village administration processes and improve data accessibility.",
+    link:"/",
   },
   {
     icon: <FontAwesomeIcon icon={faServer} />,
@@ -30,6 +33,7 @@ const cardData = [
     tags: ["Web Development", "Database", "UI/UX"],
     content:
       "Developed a web interface for GPMS database to streamline village administration processes and improve data accessibility.",
+    link:"/",
   },
   {
     icon: <FontAwesomeIcon icon={faMobile} />,
@@ -37,6 +41,7 @@ const cardData = [
     tags: ["Web Development", "Convex", "Clerk-Authentication"],
     content:
       "Developed a web interface for GPMS database to streamline village administration processes and improve data accessibility.",
+    link:"https://adhithya-spotlight-app--09pcn93kdm.expo.app/",
   },
 ];
 function ProjectSection() {

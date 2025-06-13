@@ -3,7 +3,7 @@
   --bg-light: #ffffff;
   --text-dark: #21B607;
   --text-light: #213547;
-  --primary-color: #646cff;
+  --primary-color: #ffffff;
   --hover-color: #21B607;
 
   line-height: 1.5;
@@ -32,7 +32,7 @@ body {
 }
 
 /* DARK THEME (default) */
-body[data-theme='dark']  *{
+body[data-theme='dark']  {
   background-color: var(--bg-dark);
   color: var(--text-dark);
 }
@@ -46,13 +46,14 @@ body[data-theme='dark'] a:hover {
 }
 
 body[data-theme='dark'] button {
-  background-color: #1a1a1a;
+  background-color: #000000;
+  /* border: 2px solid white; */
   color: #ffffff;
 }
 
 body[data-theme='dark'] button:hover {
   border-color: var(--primary-color);
-  background-color: #2a2a3a;
+  background-color: #0c0c11;
 }
 
 /* LIGHT THEME */

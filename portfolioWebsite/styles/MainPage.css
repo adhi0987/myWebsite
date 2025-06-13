@@ -59,7 +59,7 @@ body[data-theme="light"] .text-container .intro h2 {
 
 /* Button Colors Based on Theme */
 body[data-theme="dark"] .resume-btn button {
-  background-color: blue;
+  background-color: gray;
   color: white;
 }
 
