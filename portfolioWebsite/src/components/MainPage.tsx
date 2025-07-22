@@ -1,4 +1,5 @@
-import { faDownload, faGithub, faLinkedin } from "@fortawesome/free-solid-svg-icons";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import { generateCV } from "../utils/cvGenerator";
@@ -7,7 +8,7 @@ interface Props {
   darkMode: boolean;
 }
 
-function MainPage({ darkMode }: Props) {
+function MainPage({ }: Props) {
   const [isDownloading, setIsDownloading] = useState(false);
 
   const handleDownloadCV = async () => {
