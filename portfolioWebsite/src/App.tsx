@@ -17,7 +17,7 @@ function App() {
     
     if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
       setDarkMode(true);
-      document.documentElement.classList.add('dark');
+      document.body.classList.add('dark-mode');
     }
   }, []);
 
@@ -26,42 +26,38 @@ function App() {
     setDarkMode(newDarkMode);
     
     if (newDarkMode) {
-      document.documentElement.classList.add('dark');
+      document.body.classList.add('dark-mode');
       localStorage.setItem('theme', 'dark');
     } else {
-      document.documentElement.classList.remove('dark');
+      document.body.classList.remove('dark-mode');
       localStorage.setItem('theme', 'light');
     }
   };
 
   return (
-    <div className={`min-h-screen transition-colors duration-300 ${
-      darkMode 
-        ? 'bg-gray-900 text-white' 
-        : 'bg-white text-gray-900'
-    }`}>
+    <div className="app">
       <Navbar darkMode={darkMode} toggleTheme={toggleTheme} />
       
       <main>
-        <section id="home" className="min-h-screen">
+        <section id="home">
           <MainPage darkMode={darkMode} />
         </section>
         
-        <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-300 dark:via-gray-600 to-transparent"></div>
+        <div className="section-divider"></div>
         
-        <section id="education" className="py-16">
+        <section id="education" className="section bg-gray-50">
           <AcademicSection />
         </section>
         
-        <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-300 dark:via-gray-600 to-transparent"></div>
+        <div className="section-divider"></div>
         
-        <section id="projects" className="py-16">
+        <section id="projects" className="section">
           <ProjectSection />
         </section>
         
-        <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-300 dark:via-gray-600 to-transparent"></div>
+        <div className="section-divider"></div>
         
-        <section id="experience" className="py-16">
+        <section id="experience" className="section bg-gray-50">
           <Internship />
         </section>
         
