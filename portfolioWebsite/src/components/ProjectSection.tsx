@@ -5,7 +5,8 @@ import {
   faMobile, 
   faServer,
   faCode,
-  faFolderOpen 
+  faFolderOpen,
+  faArrowUpRightFromSquare
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ProjectCard from "./ProjectCard";
@@ -75,8 +76,14 @@ const cardData = [
 
 function ProjectSection() {
   return (
-    <div className="py-16 bg-white dark:bg-gray-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="py-16 bg-white dark:bg-gray-900 relative overflow-hidden">
+      {/* Background Elements */}
+      <div className="absolute inset-0 opacity-30 dark:opacity-20">
+        <div className="absolute top-0 right-0 w-72 h-72 bg-gradient-to-br from-primary-100 to-purple-100 dark:from-primary-900/20 dark:to-purple-900/20 rounded-full filter blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-blue-100 to-primary-100 dark:from-blue-900/20 dark:to-primary-900/20 rounded-full filter blur-3xl"></div>
+      </div>
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16 animate-slide-up">
           <h2 className="section-heading">
@@ -108,16 +115,17 @@ function ProjectSection() {
               href="https://github.com/adhi0987"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary"
+              className="btn-primary group"
             >
-              <FontAwesomeIcon icon={faCode} className="mr-2" />
+              <FontAwesomeIcon icon={faCode} className="mr-2 group-hover:rotate-12 transition-transform duration-200" />
               View All Projects on GitHub
             </a>
             <a
               href="#experience"
-              className="btn-secondary"
+              className="btn-secondary group"
             >
-              Explore My Experience
+              <span>Explore My Experience</span>
+              <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="ml-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-200" />
             </a>
           </div>
         </div>

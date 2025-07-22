@@ -100,8 +100,14 @@ function Internship() {
   ];
 
   return (
-    <div className="py-16 bg-gradient-to-br from-primary-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="py-16 bg-gradient-to-br from-primary-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 relative overflow-hidden">
+      {/* Background Elements */}
+      <div className="absolute inset-0 opacity-20 dark:opacity-10">
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-br from-blue-200 to-primary-200 dark:from-blue-900/30 dark:to-primary-900/30 rounded-full filter blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-tr from-purple-200 to-pink-200 dark:from-purple-900/30 dark:to-pink-900/30 rounded-full filter blur-3xl"></div>
+      </div>
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16 animate-slide-up">
           <h2 className="section-heading">
@@ -129,7 +135,7 @@ function Internship() {
                 <div className="flex flex-col lg:flex-row gap-6">
                   {/* Icon and Type */}
                   <div className="flex-shrink-0">
-                    <div className={`w-16 h-16 rounded-full flex items-center justify-center text-white shadow-lg ${
+                    <div className={`w-16 h-16 rounded-full flex items-center justify-center text-white shadow-lg transform group-hover:scale-110 transition-transform duration-300 ${
                       exp.type === 'responsibility' ? 'bg-gradient-to-br from-blue-500 to-blue-600' :
                       exp.type === 'competition' ? 'bg-gradient-to-br from-purple-500 to-purple-600' :
                       'bg-gradient-to-br from-green-500 to-green-600'
@@ -215,11 +221,11 @@ function Internship() {
             {achievements.map((achievement, index) => (
               <div
                 key={index}
-                className={`card p-6 text-center hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 animate-slide-up`}
+                className={`card p-6 text-center hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 animate-slide-up group`}
                 style={{ animationDelay: `${(index + 8) * 100}ms` }}
               >
                 <div className="space-y-4">
-                  <div className="w-16 h-16 mx-auto bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center text-white shadow-lg">
+                  <div className="w-16 h-16 mx-auto bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center text-white shadow-lg transform group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
                     <FontAwesomeIcon icon={achievement.icon} className="text-xl" />
                   </div>
                   

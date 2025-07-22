@@ -15,8 +15,11 @@ interface Props {
 
 function ProjectCard(props: Props) {
   return (
-    <div className="card group hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
-      <div className="p-6 space-y-4">
+    <div className="card group hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 relative overflow-hidden">
+      {/* Hover Effect Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary-500/5 to-purple-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      
+      <div className="p-6 space-y-4 relative z-10">
         {/* Header */}
         <div className="flex items-start justify-between">
           <div className="flex items-center gap-4">
@@ -72,9 +75,9 @@ function ProjectCard(props: Props) {
             href={props.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 btn-primary group/btn"
+            className="flex-1 btn-primary group/btn text-sm"
           >
-            View Project
+            <span>View Project</span>
             <FontAwesomeIcon 
               icon={faArrowUpRightFromSquare} 
               className="ml-2 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform duration-200" 
@@ -85,12 +88,12 @@ function ProjectCard(props: Props) {
               href={props.githubLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-secondary group/btn"
+              className="px-3 py-2 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-lg transition-all duration-200 transform hover:scale-105 group/btn"
               aria-label="View on GitHub"
             >
               <FontAwesomeIcon 
                 icon={faGithub} 
-                className="group-hover/btn:scale-110 transition-transform duration-200" 
+                className="text-lg group-hover/btn:scale-110 transition-transform duration-200" 
               />
             </a>
           )}
