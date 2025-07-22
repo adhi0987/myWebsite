@@ -18,6 +18,7 @@ function App() {
     if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
       setDarkMode(true);
       document.body.classList.add('dark-mode');
+      document.documentElement.classList.add('dark');
     }
   }, []);
 
@@ -27,9 +28,11 @@ function App() {
     
     if (newDarkMode) {
       document.body.classList.add('dark-mode');
+      document.documentElement.classList.add('dark');
       localStorage.setItem('theme', 'dark');
     } else {
       document.body.classList.remove('dark-mode');
+      document.documentElement.classList.remove('dark');
       localStorage.setItem('theme', 'light');
     }
   };

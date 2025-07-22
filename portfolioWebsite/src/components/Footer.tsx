@@ -44,9 +44,14 @@ function Footer() {
   ];
 
   return (
-    <footer className="bg-gray-900 dark:bg-gray-950 text-white">
+    <footer className="bg-gray-900 dark:bg-gray-950 text-white relative overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-primary-500/10 to-purple-600/10"></div>
+      </div>
+      
       {/* Main Footer Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About Section */}
           <div className="lg:col-span-2 space-y-4">
@@ -130,22 +135,22 @@ function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-800">
+      <div className="border-t border-gray-800/50 relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <div className="flex items-center text-gray-400">
               <span>© 2025 Adhithya. Made with</span>
               <FontAwesomeIcon icon={faHeart} className="mx-2 text-red-500 animate-pulse" />
-              <span>and lots of coffee</span>
+              <span>and lots of coffee ☕</span>
             </div>
             
             <button
               onClick={scrollToTop}
-              className="flex items-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 rounded-lg text-gray-300 hover:text-white transition-all duration-200 transform hover:scale-105"
+              className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-primary-600 to-purple-600 hover:from-primary-700 hover:to-purple-700 rounded-lg text-white transition-all duration-200 transform hover:scale-105 hover:-translate-y-1 shadow-lg hover:shadow-xl"
               aria-label="Scroll to top"
             >
               <FontAwesomeIcon icon={faArrowUp} />
-              <span className="text-sm">Back to Top</span>
+              <span className="text-sm font-medium">Back to Top</span>
             </button>
           </div>
         </div>
